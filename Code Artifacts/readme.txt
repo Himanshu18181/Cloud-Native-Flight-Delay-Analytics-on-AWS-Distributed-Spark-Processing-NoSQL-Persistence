@@ -4,10 +4,6 @@ Cloud Native Flight Delay Analytics on AWS: Distributed Spark Processing, NoSQL 
 Student: x24230308
 ================================================================
 
-DEMONSTRATION VIDEO
--------------------
-URL: <https://youtu.be/u86006bxZSI?si=TZ-7lc5fYYKTo4Bn>
-
 REPOSITORY CONTENTS
 -------------------
 flight_react_spark_v6.py     PySpark ETL job submitted to Amazon EMR.
