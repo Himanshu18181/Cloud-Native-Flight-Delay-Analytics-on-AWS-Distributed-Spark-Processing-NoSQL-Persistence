@@ -1,0 +1,43 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "S3DashboardData",
+      "Effect": "Allow",
+      "Action": ["s3:GetObject", "s3:ListBucket"],
+      "Resource": [
+        "arn:aws:s3:::flight-delay-project-669688",
+        "arn:aws:s3:::flight-delay-project-669688/*"
+      ]
+    },
+    {
+      "Sid": "EMRReadAndSubmit",
+      "Effect": "Allow",
+      "Action": [
+        "elasticmapreduce:ListSteps",
+        "elasticmapreduce:DescribeStep",
+        "elasticmapreduce:DescribeCluster",
+        "elasticmapreduce:AddJobFlowSteps"
+      ],
+      "Resource": "arn:aws:elasticmapreduce:us-east-1:669688919516:cluster/j-3AUQOHYTC9PXZ"
+    },
+    {
+      "Sid": "DynamoDBRead",
+      "Effect": "Allow",
+      "Action": [
+        "dynamodb:Scan",
+        "dynamodb:Query",
+        "dynamodb:GetItem",
+        "dynamodb:BatchGetItem",
+        "dynamodb:DescribeTable"
+      ],
+      "Resource": [
+        "arn:aws:dynamodb:us-east-1:669688919516:table/flight_airlines",
+        "arn:aws:dynamodb:us-east-1:669688919516:table/flight_airports",
+        "arn:aws:dynamodb:us-east-1:669688919516:table/flight_monthly",
+        "arn:aws:dynamodb:us-east-1:669688919516:table/flight_summary",
+        "arn:aws:dynamodb:us-east-1:669688919516:table/flight_holidays"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+.download-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.download-btn {
+  background: var(--accent-primary, #0094C6);
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 0.3px;
+  transition: background 0.15s ease;
+}
+
+.download-btn:hover {
+  background: #00a7df;
+}
+
+.download-list {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  background: #001242;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  min-width: 200px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+  z-index: 50;
+  overflow: hidden;
+}
+
+.download-list button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: none;
+  color: #e8eef5;
+  padding: 10px 14px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.download-list button:hover {
+  background: rgba(0, 148, 198, 0.18);
+}
